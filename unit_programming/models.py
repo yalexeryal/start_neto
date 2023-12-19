@@ -4,7 +4,7 @@ from django.utils import timezone
 
 
 class ListProfessions(models.Model):
-    name_professions = models.CharField(max_length=200, unique=True)
+    name_professions = models.CharField(max_length=200, unique=True, verbose_name='Профессия')
     description = models.TextField()
 
     def __str__(self):
